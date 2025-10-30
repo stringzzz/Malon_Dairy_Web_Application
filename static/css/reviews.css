@@ -1,0 +1,113 @@
+.reviews-and-filter {
+	display: grid;
+	grid-template-columns: 5fr 2fr;
+	align-items: start;
+	margin: 3% auto;
+	column-gap: 0;
+}
+
+.heading {
+	text-align: center;
+	margin: 2% 0;
+	font-size: 24px;
+}
+.reviews-content {
+	background-color: rgb(80, 150, 255);
+	text-align: center;
+	height: fit-content;
+	padding: 1%;
+	border: 3px solid rgb(50, 50, 65);
+	margin: 0 auto;
+	width: 90%;
+}
+
+.order-group {
+	background-color: rgb(150, 240, 255);
+	height: fit-content;
+	border: 3px solid rgb(30, 30, 45);	
+	margin: 2% auto;
+}
+
+.reviews-filter {
+	background-color: rgb(150, 240, 255);
+	height: fit-content;
+	border: 3px solid rgb(30, 30, 45);	
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+}
+
+/* */
+.order-items table {
+	text-align: left;
+	width: 90%;
+	background-color: rgb(100, 180, 255);
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+.order-items td {
+	border: 3px solid rgb(50, 50, 75);
+	padding-left: 1%;
+}
+
+.container1 {
+	width: 300px;
+	margin: 2% auto;
+}
+.transparent-star, .opaque-star {
+	width: 50px;
+}
+.transparent-star {
+	opacity: 0.4;
+}
+.opaque-star {
+	opacity: 1;
+}
+textarea {
+	width: 50%;
+	height: 200px;
+	resize: none;
+}
+
+.review {
+	width: 50%;
+	padding: 3%;
+	background-color: rgb(100, 180, 255);
+	border: 3px solid rgb(50, 50, 65);			
+	margin: 3% auto;
+}
+
+.reviews-filter {
+	padding: 2%;
+}
+.search-bar {
+	text-align: center;
+	margin-bottom: 2%;
+}
+.categories {
+	margin: 3%;
+}
+.single-checkbox {
+	margin-right: 1%;
+}
+.buttons {
+	text-align: center;
+	margin: 2% auto;
+}
+.buttons button {
+	background-color: rgb(100, 100, 200);
+	border: 1px solid rgb(50, 50, 75);
+	padding: 1%;
+	width: 20%;
+	margin: 2% 5%;
+}
+.buttons button:hover {
+	background-color: rgb(120, 120, 220);
+	border: 1px solid rgb(60, 60, 95);
+	cursor: pointer;
+}
+.buttons button:active {
+	background-color: rgb(140, 140, 240);
+	border: 1px solid rgb(70, 70, 110);
+	font-weight: bold;
+}

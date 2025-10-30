@@ -1,0 +1,133 @@
+.job-application-content {
+	display: grid;
+	grid-template-columns: 2fr 4fr;
+	align-items: start;
+	width: 90%;
+	margin: 3% auto;
+}
+
+.job-application-nav ul {
+	list-style-type: none;
+	padding: 2%;
+}
+.job-application-nav li {
+	text-align: left;
+	margin-left: 10%;
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.job-application-nav li:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.job-application-nav li:active {
+	color: rgb(90, 160, 255);
+}
+
+.job-application-nav, .job-application-forms {
+	background-color: rgb(150, 240, 255);
+	text-align: center;
+	height: fit-content;
+	border: 3px solid rgb(30, 30, 45);	
+	margin: 0 auto;
+	width: 95%;
+}
+.job-application-forms h1 {
+	font-size: 20px;
+	margin-top: 2%;
+}
+.job-application-forms {
+	padding: 3%;
+}
+
+.application-form {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	background-color: rgb(120, 200, 255);
+	border: 2px solid rgb(80, 80, 120);
+	margin: 2% auto;
+	padding: 2%;
+}
+.text-input, .text-form {
+	margin: 1% 0;
+}
+input, select {
+	background-color: rgb(190, 250, 255);	
+	border: 2px solid rgb(60, 60, 85);
+}
+.select-applying-to {
+	margin: 3% auto;
+}
+label {
+	margin-right: 1%;
+}
+.outer-password-bar {
+	width: 50%;
+	height: 20px;
+	border: 2px solid black;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+.inner-password-bar {
+	height: 100%;
+	width: 0%;
+	border-radius: 20px;
+}
+.password-policy p, .matching-passwords p {
+	font-size: 14px;
+	text-decoration: underline;
+} 
+
+.interview-question {
+	margin: 2% auto;
+	width: 95%;
+}
+.interview-answer {
+	background-color: rgb(190, 250, 255);	
+	border: 2px solid rgb(60, 60, 85);
+	width: 95%;
+	height: 300px;
+}
+
+#submit-application-button, #check-status-button {
+	width: 30%;
+	background-color: rgb(90, 160, 255);
+	margin: 3% auto;
+	border: 1px solid rgb(60, 60, 100);
+}
+#submit-application-button:hover, #check-status-button:hover {
+	cursor: pointer;
+	background-color: rgb(100, 180, 255);
+	border: 1px solid rgb(80, 80, 120);
+}
+#submit-application-button:active, #check-status-button:active {
+	background-color: rgb(120, 200, 255);
+	border: 1px solid rgb(90, 90, 130);
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	background-color: rgb(120, 200, 255);
+	border: 2px solid rgb(80, 80, 120);
+	margin: 2% auto;
+	padding: 2%;
+}
+#email, #password {
+	margin: 2% auto;
+}
+
+.error-messages {
+	margin: 2% auto;
+	padding: 2%;
+	background-color: rgb(190, 250, 255);	
+	border: 2px solid rgb(60, 60, 85);
+}

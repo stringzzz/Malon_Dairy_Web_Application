@@ -1,0 +1,124 @@
+.employee-content {
+	width: 80%;
+	margin: 2% auto;
+	display: grid;
+	grid-template-columns: 2fr 5fr 2fr;
+	align-items: start;
+}
+
+.employee-navs, .request-content, .request-navs {
+	background-color: rgb(150, 240, 255);	
+	border: 3px solid rgb(30, 30, 45);	
+	padding-top: 3%;
+}
+
+.request-content {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 3%;
+}
+.request-item {
+	background-color: rgb(200, 240, 255);
+	border: 1px solid rgb(30, 30, 45);
+	margin: 1% auto;
+	text-align: left;
+	width: 80%;
+	padding: 1%;
+}
+.request-item p, .request-item input {
+	display: inline-block;
+}
+.request-item p {
+	width: 500px;
+}
+.request-item input {
+	width: 10%;
+}
+
+
+
+.employee-nav li {
+	text-align: left;
+	margin-left: 40%;
+	list-style-type: none;
+	margin: 4% 0;
+}
+.employee-nav li a {
+	text-align: left;
+	margin-left: 10%;
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.employee-nav li a:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.employee-nav li a:active {
+	color: rgb(90, 160, 255);
+}
+
+.request-nav {
+	text-align: left;
+	list-style-type: none;
+	margin: 4% 0;
+	margin-left: 10%;
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.request-nav li:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.request-nav li:active {
+	color: rgb(90, 160, 255);
+}
+.send-request-button, .approve-request-button {
+	margin: 2% 3%;
+	background-color: rgb(100, 100, 200);
+	border: 1px solid rgb(50, 50, 75);
+	padding: 1%;
+	width: 30%;
+}
+.send-request-button:hover, .approve-request-button:hover {
+	background-color: rgb(120, 120, 220);
+	border: 1px solid rgb(60, 60, 95);
+	cursor: pointer;
+}
+.send-request-button:active, .approve-request-button:active {
+	background-color: rgb(140, 140, 240);
+	border: 1px solid rgb(70, 70, 110);
+	font-weight: bold;
+}
+
+.inventory-request {
+	background-color: rgb(180, 220, 255);
+	margin: 3% auto;
+	border: 2px solid rgb(50, 50, 75);
+	width: 90%;
+	padding: 3%;
+}
+.inventory-request table {
+	text-align: left;
+	width: 90%;
+	background-color: rgb(200, 240, 255);
+	margin: 2% auto;
+	border-collapse: collapse;
+}
+.inventory-request table td {
+	border: 3px solid rgb(50, 50, 75);
+	padding-left: 1%;
+}
+.insufficient-inventory {
+	color: red;
+}

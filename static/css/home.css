@@ -1,0 +1,23 @@
+.content {
+	color: rgb(30, 30, 45);
+	background-color: rgb(150, 240, 255);
+	border: 2px solid rgb(30, 30, 45);	
+	width: 55%;
+	margin: 2% auto;
+}
+
+.content p {
+	width: 90%;
+	margin: 4%;
+}
+
+.content p img {
+	width: 250px;
+	margin: 2%;
+}
+.left-images {
+	float: left;
+}
+.right-images {
+	float: right;
+}

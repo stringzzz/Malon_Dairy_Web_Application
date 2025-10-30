@@ -1,0 +1,78 @@
+.login-content {
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 3%;
+	display: grid;
+	grid-template-columns: 6fr 2fr;
+	align-items: start;
+}
+
+.login {
+	width: 60%;
+	background-color: rgb(150, 240, 255);	
+	text-align: center;
+	border: 3px solid rgb(30, 30, 45);	
+	margin: 0 auto;
+	margin-top: 4%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.login h1 {
+	font-size: 26px;
+	margin-bottom: 3%;
+}
+.login form {
+	padding: 5%;
+} 
+form input {
+	padding: 0.6%;
+	border: 2px solid rgb(30, 30, 45);
+	margin-bottom: 2%;
+}
+#login-button {
+	width: 20%;
+	padding: 1% 0;
+	margin-top: 2%;
+	background-color: rgb(100, 150, 255);
+	border: 2px solid rgb(30, 30, 45);	
+}
+p a {
+	color: rgb(50, 50, 60);	
+}
+p a:hover {
+	cursor: pointer;
+	color: rgb(90, 90, 120);
+}
+p a:active {
+	color: rgb(100, 100, 150);
+}
+
+.cart-and-categories {
+	background-color: rgb(150, 240, 255);
+	text-align: center;
+	height: fit-content;
+	border: 3px solid rgb(30, 30, 45);	
+	margin-top: 10%;
+}
+.login-and-register {
+	display: block;
+	margin-top: 3%;
+}
+.total-and-cart {
+	margin: 4% auto;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-image: url('/static/shopping_cart1.png');
+	background-size: 100px 100px;
+}
+.total-quantity {
+	display: inline;
+	width: 50%;
+	top: 22%;
+	left: 35%;
+	position: absolute;
+}
+.estimated-total {
+	margin-bottom: 4%;
+}

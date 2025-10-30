@@ -1,0 +1,60 @@
+.employee-content {
+	width: 80%;
+	margin: 2% auto;
+	display: grid;
+	grid-template-columns: 2fr 6fr;
+	column-gap: 3%;
+	align-items: start;	
+}
+
+.employee-navs, .announcements-content {
+	background-color: rgb(150, 240, 255);	
+	border: 3px solid rgb(30, 30, 45);	
+	padding: 3% 0;
+}
+
+.announcements-content {
+	text-align: center;
+}
+.announcement {
+	margin: 3% auto;
+	width: 60%;
+}
+.announcement-info {
+	background-color: rgb(190, 250, 255);	
+	border: 2px solid rgb(60, 60, 85);	
+}
+.announcement-info:hover {
+	cursor: pointer;
+	color: rgb(80, 80, 120);
+}
+.announcement-body {
+	background-color: rgb(190, 250, 255);	
+	border: 2px solid rgb(60, 60, 85);	;
+}
+
+.employee-nav li {
+	text-align: left;
+	margin-left: 40%;
+	list-style-type: none;
+	margin: 4% 0;
+}
+.employee-nav li a {
+	text-align: left;
+	margin-left: 10%;
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.employee-nav li a:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.employee-nav li a:active {
+	color: rgb(90, 160, 255);
+}
+

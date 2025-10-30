@@ -1,0 +1,78 @@
+.cart-content {
+	width: 60%;
+	margin: 3% auto;
+	background-color: rgb(150, 240, 255);	
+	border: 3px solid rgb(30, 30, 45);	
+	padding: 2%;
+
+}
+.empty-message {
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	font-size: 24px;
+}
+.cart-and-buttons {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+table {
+	width: 60%;
+	background-color: rgb(100, 180, 255);
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+td {
+	border: 3px solid rgb(50, 50, 75);
+	padding-left: 1%;
+}
+
+.remove-items-buttons {
+	display: flex;
+	flex-direction: column;
+	padding-top: 4%;
+	width: 25%;
+}
+.buttons {
+	width: 100%;
+}
+.buttons button {
+	background-color: rgb(80, 80, 175);
+	border: 1px solid rgb(50, 50, 75);
+	padding: 1%;
+	margin: 2%;
+}
+.buttons button:hover {
+	background-color: rgb(100, 100, 200);
+	border: 1px solid rgb(60, 60, 95);
+	cursor: pointer;
+}
+.buttons button:active {
+	background-color: rgb(120, 120, 220);
+	border: 1px solid rgb(70, 70, 110);
+	font-weight: bold;
+}
+.remove-button {
+	width: fit-content;
+}
+.increase-lower {
+	width: 20px;
+}
+
+.cart-summary {
+	width: 40%;
+	background-color: rgb(80, 150, 255);
+	padding: 3%;
+	margin: 0 auto;
+	margin-top: 4%;
+}
+.cart-summary td {
+	border: 3px solid rgb(50, 50, 75);
+}
+.checkout-url {
+	width: 100%;
+	text-align: center;
+	margin-top: 10%;
+}

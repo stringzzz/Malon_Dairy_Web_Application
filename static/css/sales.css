@@ -1,0 +1,101 @@
+.employee-content {
+	width: 95%;
+	margin: 2% auto;
+	display: grid;
+	grid-template-columns: 2fr 5fr 2fr;
+	align-items: start;
+}
+
+.employee-navs, .sales-content, .sales-filter {
+	background-color: rgb(150, 240, 255);	
+	border: 3px solid rgb(30, 30, 45);	
+	padding-top: 3%;
+}
+
+.employee-nav li {
+	text-align: left;
+	margin-left: 40%;
+	list-style-type: none;
+	margin: 4% 0;
+}
+.employee-nav li a {
+	text-align: left;
+	margin-left: 10%;
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.employee-nav li a:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.employee-nav li a:active {
+	color: rgb(90, 160, 255);
+}
+
+.sales-content {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;	
+	padding-bottom: 3%;	
+}
+.sales-table {
+	text-align: left;
+	width: 90%;
+	background-color: rgb(100, 180, 255);
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+.sales-table td {
+	border: 3px solid rgb(50, 50, 75);
+	padding-left: 0.2%;
+}
+
+.sales-filter {
+	padding: 2%;
+}
+.search-bar {
+	text-align: center;
+}
+#select-location {
+	margin: 3% auto;
+}
+.categories {
+	margin: 3%;
+}
+.single-checkbox {
+	margin-right: 1%;
+}
+.prices, .quantities {
+	margin: 4%;
+}
+#min-price, #max-price, #min-quantity, #max-quantity {
+	width: 20%;
+}
+.buttons {
+	text-align: center;
+}
+.buttons button {
+	background-color: rgb(100, 100, 200);
+	border: 1px solid rgb(50, 50, 75);
+	padding: 1%;
+	width: 20%;
+	margin: 2% 5%;
+}
+.radio, .sort-radio {
+	margin: 2% auto;
+}
+.buttons button:hover {
+	background-color: rgb(120, 120, 220);
+	border: 1px solid rgb(60, 60, 95);
+	cursor: pointer;
+}
+.buttons button:active {
+	background-color: rgb(140, 140, 240);
+	border: 1px solid rgb(70, 70, 110);
+	font-weight: bold;
+}

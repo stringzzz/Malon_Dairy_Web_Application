@@ -1,0 +1,47 @@
+.nav-bar {
+	width: 60%;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	border: 3px solid rgb(30, 30, 45);
+}
+.banner {
+	height: 300px;
+	width: 100%;
+	margin: 0 auto;
+	background: rgb(150, 240, 255);
+	text-align: center;
+}
+.banner > img {
+	border: 2px solid rgb(30, 30, 45);
+	margin-top: 1%; /* 15px */
+	height: 90%;
+}
+.banner-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: rgb(150, 240, 255);
+	padding-bottom: 0.2%;
+	border-top: 3px solid rgb(30, 30, 45);
+}
+.banner-nav > li {
+	list-style-type: none;
+	margin: 0 2%;
+}
+.banner-nav li a {
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.banner-nav li a:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+}
+.banner-nav li a:visited {
+	color: rgb(55, 55, 90);
+}

@@ -1,0 +1,14 @@
+.login-content {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.login-content p {
+	width: 60%;
+	background-color: rgb(150, 240, 255);	
+	text-align: center;
+	border: 3px solid rgb(30, 30, 45);	
+	margin: 0 auto;
+	margin-top: 4%;
+	padding: 3%;
+}

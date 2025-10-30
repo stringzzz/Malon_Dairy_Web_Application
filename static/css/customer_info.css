@@ -1,0 +1,78 @@
+.user-info-content {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	align-items: start;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.user-info-links {
+	background-color: rgb(150, 240, 255);
+	text-align: center;
+	height: fit-content;
+	padding: 5%;
+	border: 3px solid rgb(30, 30, 45);
+	margin-top: 10%;
+}
+.user-info-nav li {
+	list-style-type: none;
+	margin: 4% 0;
+}
+.user-info-nav li a {
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.user-info-nav li a:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.user-info-nav li a:active {
+	color: rgb(90, 160, 255);
+}
+
+.main-content {
+	background-color: rgb(150, 240, 255);
+	text-align: center;
+	height: fit-content;
+	border: 3px solid rgb(30, 30, 45);	
+	margin: 0 auto;
+	margin-top: 3%;
+	width: 95%;
+}
+.main-content p {
+	width: 100%;
+}
+
+.cart-and-categories {
+	background-color: rgb(150, 240, 255);
+	text-align: center;
+	height: fit-content;
+	border: 3px solid rgb(30, 30, 45);	
+	margin-top: 10%;
+}
+.user-email {
+	font-size: 15px;
+}
+.total-and-cart {
+	margin: 4% auto;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-image: url('/static/shopping_cart1.png');
+	background-size: 100px 100px;
+}
+.total-quantity {
+	display: inline;
+	width: 50%;
+	top: 22%;
+	left: 35%;
+	position: absolute;
+}
+.estimated-total {
+	margin-bottom: 4%;
+}

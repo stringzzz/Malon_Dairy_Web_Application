@@ -1,0 +1,126 @@
+.store-content {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 0.5%;
+	padding-bottom: 3%;
+	display: grid;
+	grid-template-columns: 6fr 2fr;
+	align-items: start;
+}
+.store-content img {
+	width: 150px;
+}
+.store-content div input {
+	width: 25px;
+}
+.store-content .products {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+	border: 3px solid rgb(30, 30, 45);
+	margin: 3% 0;
+	background-color: rgb(150, 240, 255);
+	height: 100%;
+}
+.item {
+	background-color: rgb(180, 250, 255);
+	padding: 5% 10%;
+	border: 1px solid rgb(30, 30, 45);	
+	margin: 6% 0;
+	height: 300px;
+}
+.item img, .item p, .item div, .item button {
+	margin: 2% 0;
+}
+.item .item-name {
+	font-size: 18px;
+	width: 150px;
+	height: 50px;
+	margin-top: 3%;
+	margin-bottom: 12%;
+}
+.item .add_to_cart {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+.price_and_quantity {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.price_and_quantity button {
+	width: 16px;
+	border-radius: 25%;
+}
+.item button {
+	border: 1px solid black;
+	background-color: rgb(120, 200, 255);
+}
+.item button:hover {
+	background-color: rgb(100, 180, 255);
+}
+.item button:active {
+	font-weight: bold;
+	background-color: rgb(90, 160, 255);
+}
+
+
+.cart-and-categories {
+	background-color: rgb(150, 240, 255);
+	text-align: center;
+	height: fit-content;
+	border: 3px solid rgb(30, 30, 45);	
+	margin-top: 9%;
+}
+.user-email {
+	font-size: 15px;
+}
+.login-and-register {
+	display: block;
+	margin-top: 3%;
+}
+.total-and-cart {
+	margin: 4% auto;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-image: url('/static/shopping_cart1.png');
+	background-size: 100px 100px;
+}
+.total-quantity {
+	display: inline;
+	width: 50%;
+	top: 22%;
+	left: 35%;
+	position: absolute;
+}
+.estimated-total {
+	margin-bottom: 4%;
+}
+.category-list {
+	text-align: left;
+	margin-left: 40%;
+}
+.category-list li {
+	list-style-type: none;
+	margin: 4% 0;
+}
+.category-list li {
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.category-list li:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.category-list li:active {
+	color: rgb(90, 160, 255);
+}

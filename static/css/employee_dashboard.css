@@ -1,0 +1,47 @@
+.employee-content {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 2%;	
+	display: grid;
+	grid-template-columns: 2fr 4fr;
+	align-items: start;
+	column-gap: 5%;
+}
+
+.employee-navs, .employee_message {
+	background-color: rgb(150, 240, 255);	
+	border: 3px solid rgb(30, 30, 45);	
+	padding-top: 3%;
+}
+
+.employee_message {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.employee-nav li {
+	text-align: left;
+	margin-left: 40%;
+	list-style-type: none;
+	margin: 4% 0;
+}
+.employee-nav li a {
+	text-align: left;
+	margin-left: 10%;
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.employee-nav li a:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.employee-nav li a:active {
+	color: rgb(90, 160, 255);
+}

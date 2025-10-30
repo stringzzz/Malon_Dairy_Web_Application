@@ -1,0 +1,119 @@
+.employee-content {
+	width: 80%;
+	margin: 2% auto;
+	display: grid;
+	grid-template-columns: 2fr 6fr 2fr;
+	column-gap: 3%;
+	align-items: start;	
+}
+
+.employee-navs, .employee-messages {
+	background-color: rgb(150, 240, 255);	
+	border: 3px solid rgb(30, 30, 45);	
+	padding-top: 3%;
+}
+
+.employee-messages {
+	text-align: center;	
+	padding: 3%;
+}
+
+.employee-nav li {
+	text-align: left;
+	margin-left: 40%;
+	list-style-type: none;
+	margin: 4% 0;
+}
+.employee-nav li a {
+	text-align: left;
+	margin-left: 10%;
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.employee-nav li a:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.employee-nav li a:active {
+	color: rgb(90, 160, 255);
+}
+
+.messages-nav-div {
+	background-color: rgb(150, 240, 255);	
+	border: 3px solid rgb(30, 30, 45);	
+}
+.messages-nav li {
+	text-align: left;
+	margin-left: 40%;
+	list-style-type: none;
+	margin: 4% 0;
+}
+.messages-nav li {
+	text-align: left;
+	margin-left: 10%;
+	text-decoration: none;
+	color: rgb(30, 30, 45);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	letter-spacing: 2px;
+}
+.messages-nav li:hover {
+	font-weight: bold;
+	color: rgb(60, 60, 100);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.messages-nav li:active {
+	color: rgb(90, 160, 255);
+}
+
+.subject-unread {
+	font-weight: bold;
+}
+.employee-messages form {
+	height: 90%;
+}
+form * {
+	margin-top: 2%;
+}
+.input-body {
+	width: 90%;
+	height: 300px;
+}
+
+.message {
+	margin: 3% auto;
+}
+.subject-unread, .subject-read {
+	background-color: rgb(190, 250, 255);	
+	border: 2px solid rgb(60, 60, 85);	
+}
+.subject-unread:hover, .subject-read:hover {
+	cursor: pointer;
+	color: rgb(80, 80, 120);
+}
+.message-body {
+	background-color: rgb(190, 250, 255);	
+	border: 2px solid rgb(60, 60, 85);	;
+}
+
+.reply-button {
+	width: 25%;
+	background-color: rgb(90, 160, 255);
+	margin: 3% auto;
+	border: 1px solid rgb(60, 60, 100);
+}
+.reply-button:hover {
+	cursor: pointer;
+	background-color: rgb(100, 180, 255);
+	border: 1px solid rgb(80, 80, 120);
+}
+.reply-button:active {
+	background-color: rgb(120, 200, 255);
+	border: 1px solid rgb(90, 90, 130);
+}
