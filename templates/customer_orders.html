@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Customer Orders{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/customer_orders.css">
+{% endblock %}
+{% block content %}
+		<div class="employee-content">
+			<div class="employee-navs">
+				<nav>
+					<ul class="employee-nav">
+						{% for link in employee_links %}
+							<li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div class="order-content">
+
+			</div>
+		</div>
+		<script>
+			let orders = JSON.parse('{{ orders | safe }}');
+		</script>
+		<script src="/static/js/customer_orders.js"></script>
+{% endblock %}

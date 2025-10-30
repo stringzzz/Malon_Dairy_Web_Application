@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Messages{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/messages.css">
+{% endblock %}
+{% block content %}
+		<div class="employee-content">
+			<div class="employee-navs">
+				<nav>
+					<ul class="employee-nav">
+						{% for link in employee_links %}
+							<li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div class="employee-messages">
+				<p>{{ error_message }}</p>
+			</div>
+			<div class="messages-nav-div">
+				<nav>
+					<ul class="messages-nav">
+						<li class="inbox" onclick="displayInbox()">Inbox</li>
+						<li class="sent" onclick="displaySent()">Sent</li>
+						<li class="send-message" onclick="displaySendMessage(employees, false, '', '')">Send Message</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<script>
+			let inbox = JSON.parse('{{ inbox | safe }}');
+			let sent = JSON.parse('{{ sent | safe }}');
+			let employees = JSON.parse('{{ employees | safe }}');
+			let unreadCount = JSON.parse('{{ unread_count | safe }}');
+			let sendMessageUrl  = {{ url_for('messages') | tojson }};
+		</script>
+		<script src="/static/js/messages.js"></script>
+{% endblock %}

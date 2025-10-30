@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Checkout{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/checkout.css">
+{% endblock %}
+{% block content %}
+		<div class="checkout-content">
+
+		</div>
+		<script>
+			let cartUrl = {{ url_for('view_cart') | tojson }};
+			let userInfo = JSON.parse('{{ user_info | safe }}');
+			let viewOrdersUrl = {{ url_for('view_orders') | tojson }};
+			let changeInfoUrl = {{ url_for('change_info') | tojson }};
+		</script>
+		<script src="/static/js/checkout.js"></script>
+{% endblock %}

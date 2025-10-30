@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Inventory{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/view_timesheets.css">
+{% endblock %}
+{% block content %}
+		<div class="employee-content">
+			<div class="employee-navs">
+				<nav>
+					<ul class="employee-nav">
+						{% for link in employee_links %}
+							<li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div class="view-timesheet-content">
+				<p>None Selected</p>
+			</div>
+			<div class="timesheet-filter">
+				
+			</div>
+		</div>
+		<script>
+			let timesheets = JSON.parse('{{ timesheets | safe }}');
+			let employees = JSON.parse('{{ employees | safe }}');
+			let pay_periods = JSON.parse('{{ pay_periods | safe }}');
+			let selfId = {{ self_id | tojson }};
+		</script>
+		<script src="/static/js/view_timesheets.js"></script>
+{% endblock %}

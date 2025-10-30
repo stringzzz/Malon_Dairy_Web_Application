@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{% block title %}{% endblock %} - Malon Dairy</title>
+		<link rel="stylesheet" href="/static/css/general.css">
+		<link rel="stylesheet" href="/static/css/nav_bar.css">
+		{% block specific_css %}
+		{% endblock %}
+	</head>
+	<body>
+		<div class="nav-bar">
+			<div class="banner">
+				<img src="/static/MDS_Cow_Logo1_wide2.png" alt="Malon Dairy Farm Logo">
+			</div>
+			<nav>
+				<ul class="banner-nav">
+					<li><a href="{{ url_for('index') }}">Home</a></li>
+					<li><a href="{{ url_for('reviews') }}">Reviews</a></li>
+					<li><a href="{{ url_for('locations') }}">Locations</a></li>
+					<li><a href="{{ url_for('online_store') }}">Online Store</a></li>
+					<li><a href="{{ url_for('job_applications') }}">Job Applications</a></li>
+					<li><a href="{{ url_for('employee_login') }}">Employees</a></li>
+				</ul>
+			</nav>
+		</div>
+		{% block content %}
+		{% endblock %}
+	</body>
+</html>

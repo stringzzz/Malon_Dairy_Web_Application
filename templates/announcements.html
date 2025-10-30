@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Announcements{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/announcements.css">
+{% endblock %}
+{% block content %}
+		<div class="employee-content">
+			<div class="employee-navs">
+				<nav>
+					<ul class="employee-nav">
+						{% for link in employee_links %}
+							<li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div class="announcements-content">
+
+			</div>
+		</div>
+		<script>
+			let announcements = JSON.parse('{{ announcements | safe }}');
+		</script>
+		<script src="/static/js/announcements.js"></script>
+{% endblock %}

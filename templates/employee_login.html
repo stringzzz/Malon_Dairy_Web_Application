@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Employee Login{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/employee_login.css">
+{% endblock %}
+{% block content %}
+		<div class="login-content">
+			<div class="login">
+				<h1>Employee Login</h1>
+				<form action="{{ url_for('employee_login') }}" method="POST">
+					<input type="text" name="username" placeholder="Email" maxlength=256><br>
+					<input type="password" name="password" placeholder="Password"><br>
+					<input id="login-button" type="submit" value="Login">
+				</form>
+				<p class="login-message">{{ login_message }}</p>
+			</div>
+		</div>
+		<script>
+		</script>
+{% endblock %}

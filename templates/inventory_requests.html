@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Inventory Requests{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/inventory_requests.css">
+{% endblock %}
+{% block content %}
+		<div class="employee-content">
+			<div class="employee-navs">
+				<nav>
+					<ul class="employee-nav">
+						{% for link in employee_links %}
+							<li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div class="request-content">
+				
+			</div>
+			<div class="request-navs">
+				<nav>
+					<ul class="request-nav">
+						<li onclick="displayRequestForm()">Make Request</li>
+						<li onclick="displayInventoryRequests()">View Requests</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<script>
+			let items = JSON.parse('{{ items | safe }}');
+			let requests = JSON.parse('{{ inventory_requests | safe }}');
+			let locationType = '{{ location_type }}';
+			console.log(requests);
+			console.log(locationType);
+		</script>
+		<script src="/static/js/inventory_requests.js"></script>
+{% endblock %}

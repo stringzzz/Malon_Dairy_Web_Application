@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Reviews{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/reviews.css">
+{% endblock %}
+{% block content %}
+		<div class="reviews-and-filter">
+			<div class="reviews-content">
+				
+			</div>
+			<div class="reviews-filter">
+				<div class='search-bar'>
+					<p>Product Name Search</p>
+					<input type="text" id="search-filter">
+				</div>
+				<div class="stars">
+					<select id="star-filter">
+						<option value="Any">Any</option>
+						<option value="1">1 Star</option>
+						<option value="2">2 Stars</option>
+						<option value="3">3 Stars</option>
+						<option value="4">4 Stars</option>
+						<option value="5">5 Stars</option>
+					</select>
+				</div>
+				<div class="categories">
+
+				</div>
+				<div class="buttons">
+					<button onclick="displayReviews()">Filter</button>
+					<button onclick="clearFilters()">Clear</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			let reviews = JSON.parse('{{ reviews | safe }}');
+			let categories = JSON.parse('{{ categories | safe }}');
+			let starUrl = '/static/star1.png';
+		</script>
+		<script src="/static/js/reviews.js"></script>
+{% endblock %}

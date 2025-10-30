@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Job Applications{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/job_applications.css">
+{% endblock %}
+{% block content %}
+		<div class="job-application-content">
+			<div class="job-application-nav">
+				<nav>
+					<ul>
+						<li onclick="displayApplicationForm()">Job Application</li>
+						<li onclick="displayCheckStatus()">Check Application Status</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="job-application-forms">
+
+			</div>
+		</div>
+		<script>
+			let locations = JSON.parse('{{ locations | safe }}');
+			let interviewQuestions = JSON.parse('{{ interview_questions | safe }}');
+		</script>
+		<script src="/static/js/job_applications.js"></script>
+{% endblock %}

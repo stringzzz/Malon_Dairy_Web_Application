@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}View Cart{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/view_cart.css">
+{% endblock %}
+{% block content %}
+		<div class="cart-content">
+
+		</div>
+		<script>
+			let checkoutUrl = {{ url_for('checkout') | tojson }};
+			let registrationUrl = {{ url_for('customer_registration') | tojson }};
+		</script>
+		<script src="/static/js/view_cart.js"></script>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Inventory{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/inventory.css">
+{% endblock %}
+{% block content %}
+		<div class="employee-content">
+			<div class="employee-navs">
+				<nav>
+					<ul class="employee-nav">
+						{% for link in employee_links %}
+							<li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div class="inventory-content">
+				<p>None Selected</p>
+			</div>
+			<div class="inventory-filter">
+				<div class='search-bar'>
+					<p>Product Name Search</p>
+					<input type="text" id="search-filter">
+				</div>
+				<div class="locations">
+
+				</div>
+				<div class="categories">
+
+				</div>
+				<div class='prices'>
+					<p>Price range:</p>
+					$<input type="text" id="min-price">
+					to <br>
+					$<input type="text" id="max-price">
+				</div>
+				<div class='quantities'>
+					<p>Quantity range:</p>
+					<input type="text" id="min-quantity">
+					to <br>
+					<input type="text" id="max-quantity">
+				</div>
+				<div class="buttons">
+					<button onclick="filterInventory()">Filter</button>
+					<button onclick="clearFilters()">Clear</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			let locations = JSON.parse('{{ locations | safe }}');
+			let inventory = JSON.parse('{{ inventory | safe }}');
+			let categories = JSON.parse('{{ categories | safe }}');
+		</script>
+		<script src="/static/js/inventory.js"></script>
+{% endblock %}

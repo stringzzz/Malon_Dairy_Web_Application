@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Customer Info{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/customer_info.css">
+{% endblock %}
+{% block content %}
+		<div class="user-info-content">
+			<div class="user-info-links">
+				<nav>
+					<ul class="user-info-nav">
+						<li><a href="{{ url_for('view_orders') }}">View Orders</a></li>
+						<li><a href="{{ url_for('change_info') }}">Change Info</a></li>
+						<li><a href="{{ url_for('change_password') }}">Change Password</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main-content">
+				<p class="greeting"></p>
+			</div>
+			<div class="cart-and-categories">
+				<div class="login-and-register">
+					
+				</div>
+				<a href="{{ url_for('view_cart') }}">
+					<div class="total-and-cart">
+						<p class="total-quantity"></p>
+					</div>
+				</a>
+				<p class="estimated-total"></p>
+			</div>
+		</div>
+		<script>
+			let customerName = JSON.parse('{{ name | safe }}');
+			let customerInfoUrl = {{ url_for('customer_info') | tojson }};			
+			let userEmail = JSON.parse('{{ email | safe }}');
+			let logoutUrl = {{ url_for('logout') | tojson }};			
+		</script>
+		<script src="/static/js/customer_info.js"></script>
+{% endblock %}

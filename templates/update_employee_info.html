@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Update Employee Info{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/update_employee_info.css">
+{% endblock %}
+{% block content %}
+		<div class="employee-content">
+			<div class="employee-navs">
+				<nav>
+					<ul class="employee-nav">
+						{% for link in employee_links %}
+							<li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div class="employee-update">
+				<h1>Update Employee Info</h1>
+				<form action="{{ url_for('update_employee_info') }}" method="POST" class="update-form">
+					<div class="text-form"><label for="first_name">First Name</label><input type="text" name="first_name" id="first_name" maxlength=128 required></div>
+					<div class="text-form"><label for="last_name">Last Name</label><input type="text" name="last_name" id="last_name" maxlength=128 required></div>
+					<div class="text-form"><label for="street_address">Street Address</label><input type="text" name="street_address" id="street_address" maxlength=128 required></div>
+					<div class="text-form"><label for="city">City</label><input type="text" name="city" id="city" maxlength=128 required></div>
+					<div class="select-form"><label for="state">State</label>
+					<select name="state" id="state">
+						<option value="California">California</option>
+						<option value="Arizona">Arizona</option>
+						<option value="Nevada">Nevada</option>
+						<option value="Georgia">Georgia</option>
+						<option value="Alabama">Alabama</option>
+						<option value="Florida">Florida</option>
+					</select></div>
+					<div class="text-form"><label for="zip_code">Zip Code</label><input type="text" name="zip_code" id="zip_code" maxlength=10 required></div>
+					<div class="text-form"><label for="phone_number">Phone Number</label><input type="text" name="phone_number" id="phone_number" maxlength=10 required></div>
+					<input id="submit-info-button" type="submit" value="Submit Update">
+				</form>
+				<div>
+					{% for message in messages %}
+						<p>{{ message }}</p>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<script>
+			let employeeInfo = JSON.parse('{{ employee_info | safe }}');
+			let formInput = JSON.parse('{{ form_input | safe }}');
+		</script>
+		<script src="/static/js/update_employee_info.js"></script>
+{% endblock %}

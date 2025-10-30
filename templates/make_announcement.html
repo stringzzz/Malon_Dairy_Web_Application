@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Make Announcement{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/make_announcements.css">
+{% endblock %}
+{% block content %}
+		<div class="employee-content">
+			<div class="employee-navs">
+				<nav>
+					<ul class="employee-nav">
+						{% for link in employee_links %}
+							<li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div class="make-announcement">
+				<form action="{{ url_for('make_announcement') | tojson }}" method="POST">
+					<textarea name="body" class="input-body" maxlength=1024></textarea><br>
+					<input id="make-announcement-button" type="submit" value="Make Announcement">
+				</form>
+				<p>{{ message }}</p>
+			</div>
+		</div>
+		<script>
+		</script>
+{% endblock %}

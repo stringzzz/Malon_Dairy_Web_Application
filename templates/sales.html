@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}Sales{% endblock %}
+{% block specific_css %}
+<link rel="stylesheet" href="/static/css/sales.css">
+{% endblock %}
+{% block content %}
+		<div class="employee-content">
+			<div class="employee-navs">
+				<nav>
+					<ul class="employee-nav">
+						{% for link in employee_links %}
+							<li><a href="{{ link[0] }}">{{ link[1] }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+			<div class="sales-content">
+				<p>None Selected</p>
+			</div>
+			<div class="sales-filter">
+				<div class='search-bar'>
+					<p>Product Name Search</p>
+					<input type="text" id="search-filter">
+				</div>
+				<div class="locations">
+
+				</div>
+				<div class="categories">
+
+				</div>
+				<div class='prices'>
+					<p>Price range:</p>
+					$<input type="text" id="min-price">
+					to <br>
+					$<input type="text" id="max-price">
+				</div>
+				<div class='quantities'>
+					<p>Quantity range:</p>
+					<input type="text" id="min-quantity">
+					to <br>
+					<input type="text" id="max-quantity">
+				</div>
+				<div class="buttons">
+				<div class="radio">
+					<div class="single-radio">
+						<input type="radio" id="all" name="group-by" value="All" checked>
+						<label for="all">All</label>
+					</div>
+					<div class="single-radio">
+						<input type="radio" id="total-per-store" name="group-by" value="Total Per Store">
+						<label for="total-per-store">Total Per Store</label>
+					</div>
+					<div class="single-radio">
+						<input type="radio" id="complete-total" name="group-by" value="Complete Total">
+						<label for="complete-total">Complete Total</label>
+					</div>	
+				</div>
+				<div class="sort-radio">
+					<div class="single-radio">
+						<input type="radio" id="total-descending" name="sort-by" value="Total Descending" checked>
+						<label for="all">Total Descending</label>
+					</div>
+					<div class="single-radio">
+						<input type="radio" id="total-ascending" name="sort-by" value="Total Ascending">
+						<label for="total-per-store">Total Ascending</label>
+					</div>
+				</div>
+					<button onclick="filterSales()">Filter</button>
+					<button onclick="clearFilters()">Clear</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			let locations = JSON.parse('{{ locations | safe }}');
+			let sales = JSON.parse('{{ sales | safe }}');
+			let categories = JSON.parse('{{ categories | safe }}');
+		</script>
+		<script src="/static/js/sales.js"></script>
+{% endblock %}
