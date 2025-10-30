@@ -22,7 +22,7 @@ Additionally, the user can put in a job application. There is an employee login,
 
 
 There are many more details I'm not mentioning, but the website does fully work with all of the features one might want for a mostly realistic store chain website. Also, to point out, there are certain security flaws in the system. Keeping in mind that this is just for sample purposes, obviously you would not
-want to be sending passwords and user information in cleartext, but to keep it simple this is done in this system. While all form input is checked for bad characters and any of this activity is logged in a file, there may also be plenty of flaws involving that that I overlooked.
+want to be sending passwords and user information in cleartext, but to keep it simple this is done in this system. While all form input is checked for bad characters and any of this activity is logged in a file, there may also be plenty of flaws involving this that I overlooked.
 
 
 Note: The only part currently incomplete is the CSS. It works for desktop-sized screens, but currently it does not have code for other screen sizes, such as for phone and tablet sized screens. This too will be finished soon enough.
