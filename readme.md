@@ -1,3 +1,7 @@
+--By stringzzz, Ghostwarez Co.
+--Project start date: 09-19-2025
+--Project Completion (Aside from non-Desktop size CSS): 10-30-2025
+
 This is a Full Stack application for a sample website.
 
 
