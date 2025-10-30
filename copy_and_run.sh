@@ -1,0 +1,15 @@
+sudo cp -R your_path_here/static/* /var/www/html/static/;
+sudo chmod -R 755 /var/www/html/static/;
+sudo cp -R your_path_here/templates/* /var/www/html/templates/;
+sudo chmod -R 755 /var/www/html/templates/;
+sudo cp your_path_here/online_store.py /var/www/html/online_store.py;
+sudo chmod 755 /var/www/html/online_store.py;
+sudo cp your_path_here/routes.py /var/www/html/routes.py;
+sudo chmod 755 /var/www/html/routes.py;
+sudo cp your_path_here/mds_classes_and_functions.py /var/www/html/mds_classes_and_functions.py;
+sudo chmod 755 /var/www/html/mds_classes_and_functions.py;
+sudo cp your_path_here/imports_and_init.py /var/www/html/imports_and_init.py;
+sudo chmod 755 /var/www/html/imports_and_init.py;
+sudo systemctl restart apache2;
+source myenv/bin/activate;
+python /var/www/html/online_store.py;
