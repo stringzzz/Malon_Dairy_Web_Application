@@ -1,0 +1,18 @@
+CREATE USER 'MDS_MadCow'@'localhost' identified by 'wur62AIP85&bRH$3duy%xUIt68EHt3aW';
+GRANT SELECT, UPDATE, INSERT ON MalonDairyStore.customers TO 'MDS_MadCow'@'localhost';
+GRANT SELECT ON MalonDairyStore.prices TO 'MDS_MadCow'@'localhost';
+GRANT SELECT ON MalonDairyStore.locations TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, UPDATE, INSERT ON MalonDairyStore.orders TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, INSERT ON MalonDairyStore.sales TO 'MDS_MadCow'@'localhost';
+GRANT SELECT ON MalonDairyStore.locations TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, UPDATE, INSERT ON MalonDairyStore.employees TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, UPDATE, INSERT ON MalonDairyStore.employee_logins TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, INSERT ON MalonDairyStore.employee_timesheets TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, UPDATE, INSERT ON MalonDairyStore.messages TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, INSERT ON MalonDairyStore.announcements TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, UPDATE, INSERT ON MalonDairyStore.reviews TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, INSERT ON MalonDairyStore.employee_timesheets TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, UPDATE ON MalonDairyStore.inventory TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, UPDATE, INSERT ON MalonDairyStore.inventory_requests TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, INSERT ON MalonDairyStore.request_items TO 'MDS_MadCow'@'localhost';
+GRANT SELECT, UPDATE, INSERT ON MalonDairyStore.job_applicants TO 'MDS_MadCow'@'localhost';
