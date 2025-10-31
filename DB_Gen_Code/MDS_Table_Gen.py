@@ -1,5 +1,5 @@
 #By stringzzz, Ghostwarez Co. 2025
-#For populating the Malon dairy Store database with randomized sample data
+#For populating the Malon Dairy Store database with randomized sample data
 
 import random
 import secrets
