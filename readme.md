@@ -105,3 +105,16 @@ Replace 'your_path_here' in 'mds_classes_and_functions.py' and
 
 $ bash copy_and_run.sh
 
+
+//If you've already copied the files before and you made no changes, you can instead run with these:
+
+$ sudo systemctl restart apache2;
+
+$ source myenv/bin/activate;
+
+$ python /var/www/html/online_store.py;
+
+
+//Finally, go in your web browser and enter this in the URL bar:
+
+http://localhost:5000/
