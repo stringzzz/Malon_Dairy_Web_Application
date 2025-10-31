@@ -83,7 +83,7 @@ $ deactivate
 
 //This also generates the list of sample customer and employee login info in 2 separate files
 
-(cd to the correct directory)
+(cd to the correct directory 'DB_Gen_Code')
 
 $ python3 MDS_Table_Gen.py
 
