@@ -30,10 +30,17 @@
 	padding: 2%;
 }
 .text-input {
-	margin: 1% 0;
+	margin: 1% auto;
+	width: 80%;
 }
 label {
+	width: 36%;
 	margin-right: 1%;
+	text-align: left;
+	display: inline-block;
+}
+.select-form label {
+	width: 10%;
 }
 .outer-password-bar {
 	width: 50%;
