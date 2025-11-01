@@ -36,7 +36,7 @@ function displayApplicationForm() {
 	outputHtml += `
 			</select></div>
 			<div class="text-form"><label for="zip_code">Zip Code</label><input type="text" name="zip_code" id="zip_code" maxlength=10 required></div>
-			<div class="text-form"><label for="dob">Dote of Birth</label><input type="date" name="dob" id="dob" required></div>
+			<div class="text-form"><label for="dob">Date of Birth</label><input type="date" name="dob" id="dob" required></div>
 			<div class="text-form"><label for="ssn">Social Security #</label><input type="text" name="ssn" id="ssn" maxlength=7 required></div>
 			<div class="text-form"><label for="phone_number">Phone Number</label><input type="text" name="phone_number" id="phone_number" maxlength=10 required></div>
 			<div class="interview-question">
